@@ -1,0 +1,11 @@
+@import controllers.PostForm
+@(form: Form[PostForm.PostData], id: Long)(implicit request: MessagesRequestHeader)
+
+@main("編集"){
+    @helper.form(action=routes.HomeController.update(id)){
+    @helper.CSRF.formField
+    @helper.inputText(form("title"))
+    @helper.inputDate(form("createdAt"))
+    @helper.inputText(form("body"))
+    }
+}

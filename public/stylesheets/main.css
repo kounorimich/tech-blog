@@ -1,0 +1,9 @@
+@media (min-width: 1200px) {
+    .container {
+        max-width: 900px;
+        padding: 20px 50px;
+        background-color:ghostwhite;
+        margin-top:10px;
+
+    }
+}

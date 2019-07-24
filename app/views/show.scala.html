@@ -1,0 +1,10 @@
+@(post: Post)
+
+@main("edit"){
+ <h1>@post.title</h1>
+ <h2>@post.createdAt</h2>
+ <br>
+ <br>
+ <p>@post.body</p>
+ <a href="@routes.HomeController.edit(post.id)"><button class="btn btn-primary ">編集</button></a>
+}
